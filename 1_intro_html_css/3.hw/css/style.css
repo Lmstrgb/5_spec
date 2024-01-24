@@ -1,0 +1,75 @@
+a {
+  text-decoration: none;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+
+.logo__pic {
+  padding-top: 40px;
+  padding-left: 375px;
+}
+
+.header__nav {
+  padding-top: 40px;
+  padding-left: 858px;
+}
+
+.intro__descript {
+  padding-left: 373px;
+}
+
+.intro__desc__text {
+  color: #000;
+  font-family: Gilroy-Bold;
+  font-size: 60px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  padding-top: 223px;
+
+}
+
+.intro__desc__buttons {
+
+  width: 140px;
+  height: 50px;
+  flex-shrink: 0;
+  border-radius: 50px;
+  background: #F25822;
+  box-shadow: 4px 4px 8px 0px rgba(242, 88, 34, 0.20);
+
+}
+
+.intro_btn {
+  color: #FFF;
+  font-family: Gilroy-Bold;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+
+}
+
+.watch__video {
+  color: #AAA;
+  font-family: Gilroy-Bold;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.logotypes {
+  padding-left: 345px;
+}
+
+.logo_brand {
+  width: 160px;
+  height: 50px;
+  flex-shrink: 0;
+  background: url(<path-to-image>), lightgray 50% / cover no-repeat;
+}
