@@ -74,8 +74,43 @@ a {
   padding-left: calc(50% - 800px);
   padding-right: calc(50% - 800px);
   gap: 64px;
+  position: relative;
+  font-family: 'Lato', sans-serif;
 }
 
+
+.dropdown__menu {
+  display: absolute;
+  right: 0;
+  top: 32px;
+  display: none;
+  width: 232px;
+  height: 634px;
+  background: #FFFFFF;
+  color: #6F6E6E;
+}
+
+.dropdown__menu ul {
+  list-style-type: none;
+}
+
+.dropdown__menu li {
+  padding-left: 21px;
+  text-decoration: none;
+
+}
+
+.dropdown__menu-mainul {
+  margin-top: 32px;
+}
+
+.dropdown__menu-main {
+  margin-top: 20px;
+}
+
+.submenu li{
+  margin-top: 11px;
+}
 
 .content {
   padding: 20px;
