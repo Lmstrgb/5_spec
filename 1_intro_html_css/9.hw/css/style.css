@@ -53,13 +53,13 @@ a {
   display: none;
 }
 
+
 .header__in {
   display: flex;
   align-items: center;
   width: 100vw;
   justify-content: space-between;
 }
-
 
 .center {
   padding-left: calc(50% - 570px);
@@ -74,6 +74,11 @@ a {
   padding-left: calc(50% - 800px);
   padding-right: calc(50% - 800px);
   gap: 64px;
+}
+
+
+.content {
+  padding: 20px;
 }
 
 .pic__man {
