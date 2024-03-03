@@ -1,9 +1,9 @@
-document.querySelector('.header__button').addEventListener('click', function() {
+document.querySelector('.gamburger').addEventListener('click', function() {
   document.querySelector('.dropdown__menu').style.display = 'block';
 });
 
 document.addEventListener('click', function(event) {
-  if (!event.target.closest('.header__button')) {
+  if (!event.target.closest('.gamburger')) {
       document.querySelector('.dropdown__menu').style.display = 'none';
   }
 });
