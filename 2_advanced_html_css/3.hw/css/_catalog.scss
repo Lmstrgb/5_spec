@@ -179,9 +179,13 @@ body {
   left: -10000px;
   visibility: hidden;
 
-  &:checked~.gamburger-nav {
+  // &:checked~.gamburger-nav {
+  //   right: -232px;
+  // }
+  &:not(:checked)~.gamburger-nav {
     right: -232px;
   }
+
 }
 
 .gamburger__small {

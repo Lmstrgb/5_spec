@@ -1,6 +1,8 @@
 @import 'vars';
 @import 'mixins';
+@import 'cart';
 @import 'catalog';
+
 
 a {
   text-decoration: none;
@@ -9,6 +11,10 @@ a {
 * {
   margin: 0;
   padding: 0;
+
+  ul {
+    list-style-type: none;
+  }
 }
 
 body {
@@ -82,35 +88,40 @@ body {
 }
 
 .top__head-heading {
-  font-family: 'Lato', sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 24px;
   color: $colorSelectSite;
 }
 
-.breadcrumbs__link {
-  font-family: 'Lato', sans-serif;
-  font-style: normal;
-  font-weight: 300;
-  font-size: 14px;
-  line-height: 17px;
-  color: #636363;
+.breadcrumbs__ul {
+  display: flex;
 
-  &:hover {
+  &__link a {
+    text-decoration: none;
+    color: #636363;
+  }
+
+  &__link:not(:last-child)::after {
+    content: '/';
+    padding: 0 7px;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 17px;
+    color: #636363;
+  }
+
+  &__link:last-child a {
+    font-weight: 700;
+    color: $colorSelectSite;
+  }
+
+  &__link a:hover {
     text-decoration: underline;
   }
 }
 
-.breadcrumbs__link__2 {
-  font-family: 'Lato', sans-serif;
-  font-weight: 700;
-  color: $colorSelectSite;
-
-  &:hover {
-    text-decoration: underline;
-  }
-}
 
 .center {
   padding-left: calc(50% - 570px);
