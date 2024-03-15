@@ -1,0 +1,335 @@
+@import 'vars';
+
+
+
+
+.product__cart {
+  margin-top: 96px;
+  // margin-bottom: 33px;
+  display: flex;
+  gap: 128px;
+
+  &__box {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+
+    &-cards {
+      display: flex;
+      flex-direction: row;
+      gap: 31px;
+      box-shadow: 18px 18px 15px 0px rgba(34, 60, 80, 0.12);
+      padding-right: 22px;
+      background: #FFF;
+
+      &-img {
+        width: 262px;
+        height: auto;
+      }
+
+      &-shell {
+        display: flex;
+        // flex-direction: row;
+        flex-wrap: wrap;
+        gap: 56px;
+        margin-top: 22px;
+      }
+
+      &-texts {
+
+        width: 262px;
+
+        &-p1 {
+          color: $colorCartBlack;
+          font-size: 24px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: normal;
+          margin-bottom: 42px;
+          // word-wrap: break-word; // для браузеров, которые поддерживают свойство word-wrap
+          overflow-wrap: break-word; // для браузеров, которые поддерживают свойство overflow-wrap
+          width: 220px;
+
+        }
+
+        &-2 {
+          display: flex;
+          margin-top: 6px;
+
+          &-p2 {
+            color: #575757;
+            font-size: 22px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+          }
+        }
+
+        &-2-inp {
+          color: $colorCartGrayPlaceholder;
+          width: 65px;
+          height: auto;
+          border: none;
+          font-size: 22px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: normal;
+          text-align: center;
+          vertical-align: text-bottom;
+
+          &::placeholder {
+            color: $colorCartGrayPlaceholder;
+            // border: 1px solid #EAEAEA
+          }
+
+          &:first-child::placeholder {
+            color: $colorCartPinkPlaceholder;
+            // border: 1px solid #EAEAEA
+          }
+
+        }
+      }
+    }
+  }
+}
+
+.product__cart__right {
+  display: flex;
+  flex-direction: column;
+  max-width: 360px;
+
+
+  &-forms {
+    width: 360px;
+    display: flex;
+    flex-direction: column;
+
+    &-p {
+      color: $colorCartBlack;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 300;
+      line-height: normal;
+
+
+    }
+
+    &-form {
+      max-width: 360px;
+      display: flex;
+      flex-direction: column;
+
+
+      &-addr {
+        height: 45px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        padding-left: 16px;
+        color: $colorCartBlack;
+        font-size: 13px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: normal;
+        border: 0.5px solid #a4a4a4;
+        stroke-width: 1px;
+        stroke: #A4A4A4;
+
+        &::placeholder {
+          color: $colorCartLightGrayPlaceholder;
+          font-size: 13px;
+          font-style: normal;
+          font-weight: 300;
+          line-height: normal;
+
+        }
+      }
+
+      &-state {
+        height: 45px;
+        margin-bottom: 20px;
+        padding-left: 16px;
+        color: $colorCartBlack;
+        font-size: 13px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: normal;
+        border: 0.5px solid #a4a4a4;
+        stroke-width: 1px;
+        stroke: #A4A4A4;
+
+        &::placeholder {
+          color: $colorCartLightGrayPlaceholder;
+          font-size: 13px;
+          font-style: normal;
+          font-weight: 300;
+          line-height: normal;
+
+        }
+      }
+
+      &-post {
+        height: 45px;
+        padding-left: 16px;
+        color: $colorCartBlack;
+        font-size: 13px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: normal;
+        border: 0.5px solid #a4a4a4;
+        stroke-width: 1px;
+        stroke: #A4A4A4;
+
+        &::placeholder {
+          color: $colorCartLightGrayPlaceholder;
+          font-size: 13px;
+          font-style: normal;
+          font-weight: 300;
+          line-height: normal;
+        }
+      }
+
+    }
+  }
+}
+
+.product__cart__box-btns {
+  display: flex;
+  justify-content: space-between;
+
+
+  &-clear {
+    width: 235px;
+    background-color: #fff;
+    color: $colorText;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    border: 0.5px solid #a4a4a4;
+    cursor: pointer;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    transition: all 0.3s;
+
+    &:hover {
+      background-color: #a4a4a4;
+      color: #fff;
+    }
+  }
+
+  &-continue {
+    width: 235px;
+    background-color: #fff;
+    color: $colorText;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    border: 0.5px solid #a4a4a4;
+    cursor: pointer;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    transition: all 0.3s;
+
+    &:hover {
+      background-color: #a4a4a4;
+      color: #fff;
+    }
+  }
+
+}
+
+.product__car__right-btns {
+  margin-top: 23px;
+
+
+  &-submit {
+    background-color: #FFFFFF;
+    color: $colorCartGray-2;
+    font-size: 11px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    width: 102px;
+    height: 35px;
+    border: 0.5px solid #a4a4a4;
+
+  }
+}
+
+.product__cart__right-proceed {
+  display: flex;
+  flex-direction: column;
+  margin-top: 80px;
+  background-color: #F5F3F3;
+  padding-top: 39px;
+  padding-bottom: 42px;
+  padding-right: 37px;
+  padding-left: 44px;
+  text-align: right;
+
+  &-shell {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    gap: 37px;
+  }
+
+  &-p1 {
+    color: $colorCartGray-2;
+    font-size: 11px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-align: right;
+  }
+
+  &-p2 {
+    color: $colorCartBlack;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    margin-top: 12px;
+  }
+
+  &-span-2 {
+    color: $colorSelectSite;
+  }
+
+
+  &-horizont_line {
+    width: 275px;
+    height: 1px;
+    background-color: #E2E2E2;
+    border: none;
+    margin-top: 21px;
+    margin-bottom: 17px;
+  }
+
+  &-btn {
+    margin-right: 6px;
+    background-color: #F16D7F;
+    color: #FFF;
+    padding: 10px 20px;
+    border: none;
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.3s;
+
+    &:hover {
+      background-color: #F5F3F3;
+      color: $colorSelectSite;
+    }
+  }
+
+}
+
+// .layer {
+//   height: 33px;
+// }
+
+// .custom-margin {
+//   margin-top: 128px;
+//   /* Новое значение margin-top */
+// }

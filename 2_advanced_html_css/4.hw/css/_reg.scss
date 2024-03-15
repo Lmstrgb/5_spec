@@ -1,0 +1,154 @@
+body {
+  font-family: 'Lato', sans-serif;
+}
+
+.ml {
+  margin-left: 20px;
+}
+
+.reg {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 128px;
+  margin-top: 64px;
+  @include сentering();
+}
+
+.reg__left {
+  display: flex;
+  width: 360px;
+  flex-direction: column;
+  flex-wrap: wrap;
+
+  .reg__left-p {
+    color: $colorCartLightGrayPlaceholder;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    margin-top: 15.5px;
+  }
+}
+
+.reg__form__1 {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  font-family: 'Lato', sans-serif;
+
+  &_label {
+    color: $colorCartBlack;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+
+  &_inp {
+    margin-top: 20px;
+    border: 1px solid #EAEAEA;
+    padding: 12.5px 17px 12.5px;
+
+    &::placeholder {
+      color: $colorCartLightGrayPlaceholder;
+      font-size: 13px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+    }
+  }
+
+  &_label-checkbox {
+    margin-left: 10px;
+  }
+
+  &_inp_radio {
+    display: flex;
+    margin-top: 31px;
+    margin-bottom: 33px;
+  }
+}
+
+.reg__button {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin-top: 39px;
+  width: 167px;
+  height: 50px;
+  background-color: $colorSelectSite;
+  color: #FFF;
+  border: none;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  cursor: pointer;
+  transition: all 0.3s;
+
+  span {
+    margin-left: 20px;
+  }
+
+  &:hover {
+    background-color: #FFFFFF;
+    color: $colorSelectSite;
+
+    span {
+      color: $colorSelectSite;
+    }
+  }
+}
+
+
+
+.reg__right {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-content: flex-end;
+  width: 652px;
+
+  &_p1 {
+    color: $colorText;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+  }
+
+  &_p2 {
+    margin-top: 22px;
+    margin-bottom: 21px;
+    color: $colorText;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+  }
+}
+
+.reg__right_ul {
+  list-style: none;
+
+  li {
+    margin-bottom: 16px;
+    color: $colorText;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+
+    &:before {
+      content: url('../img/reg/galka.svg');
+      // color: $colorText;
+      margin-right: 22px;
+      display: inline-block;
+      width: 20px;
+      height: 16px;
+    }
+  }
+
+}

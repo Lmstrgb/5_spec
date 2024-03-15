@@ -1,0 +1,8 @@
+@mixin сentering() {
+  padding-left: calc(50% - $widthSite/2);
+  padding-right: calc(50% - $widthSite/2);
+}
+
+@mixin footer-mt($px) {
+  margin-top: $px;
+}
