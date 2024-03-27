@@ -1,0 +1,1 @@
+document.querySelector('.footer').style.marginTop = '96px';
