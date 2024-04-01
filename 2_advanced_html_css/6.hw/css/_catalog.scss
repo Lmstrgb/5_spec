@@ -11,7 +11,6 @@ body {
 }
 
 .filter__sort {
-
   display: grid;
   grid-template-columns: repeat(auto-fit, 360px);
   gap: 30px;
@@ -31,6 +30,7 @@ body {
   width: 360px;
   position: absolute;
   box-sizing: border-box;
+  cursor: pointer;
 
   &[open] {
     background: #FFFFFF;
@@ -113,6 +113,7 @@ body {
     display: flex;
     align-items: center;
     gap: 10px;
+    cursor: pointer;
   }
 
   &__text {
@@ -337,19 +338,18 @@ body {
   }
 }
 
-@media (min-width: 768px) and (max-width: 1024px) {
-  .filter__sort {
-    @include сentering_768();
-  }
-
+//@media (min-width: 768px) and (max-width: 1024px) {
+@media (max-width: 1024px) {
 
   .filter {
     padding: 24px 0px 16px;
   }
 
   .filter__sort {
+    @include сentering_768();
     gap: 0px;
     justify-content: space-between;
+
   }
 
   .filter-left {
@@ -369,4 +369,44 @@ body {
     margin-top: 40px;
   }
 
+  .z__ind {
+    z-index: 1;
+  }
+}
+
+@media (max-width: 768px) {
+  .filter__sort {
+    display: flex;
+  }
+
+  .filter {
+    width: 60vw;
+  }
+}
+
+
+
+@media (max-width: 420px) {
+
+  .filter__heading {
+    display: none;
+  }
+
+  .filter__pic {
+    background-image: url('/6.hw/img/cat/cat__pic.svg');
+    background-size: contain;
+    width: 37.5px; // Width of the new image
+    height: 25px; // Height of the new image
+    cursor: pointer;
+  }
+
+  .sort {
+    gap: 24px;
+
+    &__text {
+      font-size: 12px;
+    }
+
+
+  }
 }

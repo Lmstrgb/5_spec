@@ -149,7 +149,7 @@
 
 }
 
-@media (min-width: 768px) and (max-width: 1024px) {
+@media (max-width: 1024px) {
   .reg {
     @include сentering_768();
     gap: 22px;
@@ -157,7 +157,7 @@
     justify-content: space-around;
 
     &__left {
-      flex-grow: 1;
+
       width: 50%;
     }
 
@@ -190,10 +190,20 @@
         font-weight: 400;
         line-height: normal;
       }
-
     }
-
   }
+}
 
+@media (max-width: 768px) {}
 
+@media (max-width: 420px) {
+  .reg {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
+
+    &__left {
+      flex-grow: 1;
+    }
+  }
 }
