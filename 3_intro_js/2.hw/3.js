@@ -14,4 +14,12 @@
 число 32.
 */
 
-// Здесь пишем решение, данный комментарий необходимо стереть.
+const dayNumberInp = prompt("Введите число  в интервале [1,32)");
+const dayNumber = +dayNumberInp;
+
+
+if (dayNumber >= 1 && dayNumber < 32) {
+  let dec = Math.ceil(dayNumber / 10);
+  console.log(`Число ${dayNumberInp} попадает в ${dec} декаду месяца.`);
+}
+else { console.log('Неверное значение'); }

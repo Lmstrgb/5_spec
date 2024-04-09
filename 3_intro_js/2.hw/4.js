@@ -23,4 +23,21 @@
 Подсказка: Возможно, вам понадобится округление чисел и оператор %.
 */
 
-// Здесь пишем решение, данный комментарий необходимо стереть.
+const num = +prompt("Введите положительное целое число");
+var numBuf = num;
+
+let numUnit = num % 10;
+numBuf = Math.trunc(numBuf / 10);
+
+let numDec = numBuf % 10;
+numBuf = Math.trunc(numBuf / 10);
+
+let numHudr = numBuf % 10;
+
+//let numHudr = numBuf;
+
+// if (numBuf < 10) {
+//   let numHudr = numBuf % 10;
+// } else { let numHudr = numBuf / 10; }
+
+alert(`В числе ${num} количество сотен: ${numHudr}, десятков: ${numDec}, единиц: ${numUnit} `);
