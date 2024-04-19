@@ -14,4 +14,51 @@
 не окажется, значит нужно будет вывести пустой массив.
 */
 
-// Здесь пишем решение, данный комментарий необходимо стереть.
+
+const mass = [];
+
+for (let i = 0; i < 5; i++) {
+  mass.push(Math.trunc(Math.random() * 10));
+}
+console.log(`Сгенерированный массив: ${mass}`);
+
+
+function summa(arr) {
+  let summ = 0;
+  for (let i = 0; i < arr.length; i++) {
+    summ = summ + arr[i];
+  }
+  console.log(`Сумма элементов массива ${arr} = ${summ}`);
+}
+
+
+function minVal(arr) {
+  let min = arr[0];
+  for (let i = 0; i < arr.length; i++) {
+    if (arr[i] < min) {
+      min = arr[i];
+    }
+  }
+  console.log(`Минимальный элемент массива ${arr}, найденный методом 1 = ${min}`);
+}
+
+function indexThree(arr) {
+  let indexesOfThree = [];
+  arr.forEach((element, index) => {
+    if (element === 3) {
+      indexesOfThree.push(index);
+    }
+  });
+  console.log(`Массив из индексов ранее сгенерированного массива ${arr}, значения которых = 3: ${indexesOfThree}`);
+}
+
+summa(mass);
+minVal(mass);
+// Можно сделать таким образом
+const min = Math.min(...mass);
+console.log(`Минимальный элемент массива ${mass}, найденный методом 2 = ${min}`);
+
+indexThree(mass);
+
+
+
