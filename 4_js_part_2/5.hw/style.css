@@ -1,0 +1,16 @@
+.img_container {
+  border: 5px solid #752275;
+  padding: 10px;
+  margin: 10px;
+  width: 400px;
+
+}
+
+.style_p {
+  color: darkblue;
+  /* Тёмно-синий цвет текста */
+  border: 2px solid black;
+  /* Чёрная рамка */
+  padding: 5px;
+  /* Отступы внутри рамки (по желанию) */
+}
