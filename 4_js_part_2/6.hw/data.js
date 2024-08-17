@@ -24,10 +24,10 @@ const DataJS = `[
   "imgUrl":"https://storage.yandexcloud.net/elyts-prod/medialibrary/ae6/1B.jpeg",
   "name": "ELLERY X M'O ",
   "category":"CAPSULE",
-  "price": "5222222$",
+  "price": "120$",
   "color":"PINK",
-  "size":"XXXXXL",
-  "quantity":"1111"
+  "size":"XXL",
+  "quantity":"2"
   }
   
   
