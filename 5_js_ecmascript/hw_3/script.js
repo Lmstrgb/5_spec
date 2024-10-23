@@ -20,3 +20,27 @@
 // // Name: Jane Doe
 // // Department: Sales
 
+class Employee {
+  constructor(name) {
+    this.name = name; // Свойство name
+  }
+
+  displayInfo() {
+    console.log(`Name: ${this.name}`); // Метод displayInfo
+  }
+}
+
+class Manager extends Employee {
+  constructor(name, department) {
+    super(name); // Вызов конструктора родительского класса
+    this.department = department; // Свойство department
+  }
+
+  displayInfo() {
+    super.displayInfo(); // Вызов метода displayInfo родительского класса
+    console.log(`Department: ${this.department}`); // Переопределенный метод
+  }
+}
+
+const employee = new Employee("Ivan Shahmaev");
+employee.displayInfo();
