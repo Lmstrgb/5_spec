@@ -44,3 +44,6 @@ class Manager extends Employee {
 
 const employee = new Employee("Ivan Shahmaev");
 employee.displayInfo();
+
+const manager = new Manager("Eugene Igorev", "Отдел продаж");
+manager.displayInfo();
