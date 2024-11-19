@@ -1,0 +1,14 @@
+@charset "UTF-8";
+body {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+img {
+  margin: 10px;
+  width: 200px;
+  /* Устанавливаем ширину изображений */
+  height: auto;
+  /* Автоматическая высота для сохранения пропорций */
+}/*# sourceMappingURL=hw_4_task_2_style.css.map */
