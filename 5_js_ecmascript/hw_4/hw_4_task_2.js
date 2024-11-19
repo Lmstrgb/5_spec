@@ -1,4 +1,5 @@
 console.log(`Задание 2`);
+// Необходимо реализовать отрисовку 10 картинок собак из API https://dog.ceo/dog-api/ с интервалом в 3 секунды.
 const dogUrl = "https://dog.ceo/api/breeds/image/random";
 const dogImagesContainer = document.querySelector('div.dog_images');
 

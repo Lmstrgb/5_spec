@@ -1,4 +1,6 @@
 
+// Необходимо получить список всех пользователей с помощью бесплатного API (https://jsonplaceholder.typicode.com/users) и отобразить их на странице. Пользователь должен иметь возможность удалить любого пользователя из списка.
+
 // https://jsonplaceholder.typicode.com/
 // const myPromice = new Promise((resolve, reject) => { });
 
