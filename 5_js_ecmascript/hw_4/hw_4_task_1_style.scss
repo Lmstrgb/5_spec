@@ -1,0 +1,26 @@
+body {
+  font-family: Arial, sans-serif;
+  margin-left: 35px;
+}
+
+.user {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  border: 2px solid #ccb;
+  margin: 4px 0;
+  max-width: 400px;
+  // height: auto;
+}
+
+// .userList {
+//   margin-left: 20px;
+// }
+
+.delete-button {
+  background-color: rgb(234, 95, 71);
+  color: white;
+  border: none;
+  cursor: pointer;
+  padding: 5px 10px;
+}
