@@ -1,0 +1,13 @@
+body {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+img {
+  margin: 10px;
+  width: 200px;
+  /* Устанавливаем ширину изображений */
+  height: auto;
+  /* Автоматическая высота для сохранения пропорций */
+}
