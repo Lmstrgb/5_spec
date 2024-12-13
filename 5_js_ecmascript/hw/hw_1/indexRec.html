@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script src="hw_1_rec.js" defer></script>
+  <style>
+    .my-class {
+      color: red;
+      font-weight: bold;
+    }
+
+    .other-class {
+      color: blue;
+    }
+
+    .other-class_1 {
+      color: goldenrod;
+    }
+
+    .highlight {
+      /*background-color: yellow;*/
+      border: 2px solid green;
+      width: 200px;
+    }
+
+    .highlight_1 {
+      border: 2px solid red;
+      width: 200px;
+    }
+  </style>
+</head>
+
+<body>
+  <div id="root">
+    <div class="other-class">Элемент 1</div>
+    <div class="other-class_1">
+      Элемент 2
+    </div>
+    <div class="other-class_2">
+      Элемент 3
+      <div class="other-class_3">
+        Элемент 4
+        <div class="my-class">Элемент 5</div>
+      </div>
+    </div>
+    <div class="other-class_4">Элемент 6
+    </div>
+  </div>
+</body>
+
+</html>
