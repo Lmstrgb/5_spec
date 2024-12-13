@@ -5,12 +5,13 @@
   "version": "0.2.0",
   "configurations": [
     {
-      "name": "Check site",
+      "name": "Check Sem_4",
       "request": "launch",
       "type": "chrome",
-      "url": "file:///C:/Data/Study%20and%20work/GeekBrains/Repos/GeekBrains/5_specialization/5_js_ecmascript/hw_2/index.html",
+      "url": "file:///C:/Data/Study%20and%20work/GeekBrains/Repos/GeekBrains/5_specialization/5_js_ecmascript/index.html",
       "webRoot": "${workspaceFolder}"
     }
   ]
 }
+
 
