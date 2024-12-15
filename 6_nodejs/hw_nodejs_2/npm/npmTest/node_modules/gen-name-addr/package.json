@@ -1,0 +1,13 @@
+{
+  "name": "gen-name-addr",
+  "version": "1.1.2",
+  "main": "indexNpm.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "startTest": "node indexNpm.js"
+  },
+  "keywords": ["generator of name", "generator of address"],
+  "author": "Lmstr",
+  "license": "ISC",
+  "description": "Simple generation of names and address"
+}
