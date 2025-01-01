@@ -1,0 +1,17 @@
+{
+  "name": "api_serv",
+  "version": "1.0.0",
+  "description": "Сделать API - сервер как на семинаре:",
+  "main": "api_server.js",
+  "scripts": {
+    "run": "api_server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.21.2",
+    "joi": "^17.13.3"
+  }
+}
