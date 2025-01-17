@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script src="js_task_2_v2.js" defer></script>
+</head>
+
+<style>
+  body {
+    font-family: Arial, sans-serif;
+  }
+
+  .review-container {
+    margin-top: 20px;
+  }
+
+  .review {
+    border: 1px solid #83afdb;
+    padding: 10px;
+    margin-bottom: 10px;
+  }
+
+  .box-input {
+    max-width: 400px;
+  }
+
+  .box-input div {
+    margin-top: 14px;
+    display: flex;
+    align-items: center;
+  }
+
+  .box-input button {
+    margin-top: 14px;
+  }
+
+  .box-input label {
+    min-width: 140px;
+  }
+
+  .box-input input {
+    margin-left: 10px;
+    width: -webkit-fill-available;
+  }
+
+  .box-input textarea {
+    margin-left: 10px;
+    width: -webkit-fill-available;
+    min-height: 80px;
+  }
+</style>
+</head>
+
+<body>
+
+  <h2>Система отзывов</h2>
+  <div class="box-input">
+    <div>
+      <label for="product">Марка телефона:</label>
+      <input type="text" id="product" placeholder="Введите марку телефона">
+    </div>
+    <div>
+      <label for="review">Отзыв:</label>
+      <textarea id="review" placeholder="Введите ваш отзыв"></textarea>
+    </div>
+    <button id="submit">Отправить отзыв</button>
+  </div>
+
+
+  <div class="review-container" id="reviewContainer"></div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
