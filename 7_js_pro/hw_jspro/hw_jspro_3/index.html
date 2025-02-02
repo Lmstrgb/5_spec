@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Отзывы о продуктах</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+    }
+
+    .product {
+      margin: 10px 0;
+      cursor: pointer;
+      color: blue;
+    }
+
+    .review {
+      margin-left: 20px;
+    }
+  </style>
+</head>
+
+<body>
+  <h1>Добавить отзыв о продукте</h1>
+  <input type="text" id="productName" placeholder="Название продукта" required>
+  <textarea id="reviewText" placeholder="Ваш отзыв" required></textarea>
+  <button id="addReview">Добавить отзыв</button>
+
+  <h2>Отзывы о продуктах</h2>
+  <div id="productList"></div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
