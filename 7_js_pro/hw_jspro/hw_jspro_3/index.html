@@ -11,26 +11,72 @@
       margin: 20px;
     }
 
+    .h1_class {
+      margin-left: 10px;
+    }
+
+    .h2_class {
+      margin-left: 10px;
+    }
+
+    .box-input {
+      max-width: 400px;
+    }
+
+    .box-input input {
+      margin-left: 10px;
+      margin-bottom: 14px;
+      width: -webkit-fill-available;
+    }
+
+    .box-input textarea {
+      margin-left: 10px;
+      width: -webkit-fill-available;
+      min-height: 80px;
+    }
+
+    .box-input button {
+      margin-top: 14px;
+      margin-left: 10px;
+    }
+
     .product {
       margin: 10px 0;
       cursor: pointer;
       color: blue;
+      margin-left: 10px;
     }
 
     .review {
       margin-left: 20px;
+    }
+
+    .delete-button {
+      margin-left: 4px;
+      background-color: rgb(136, 75, 75);
+      color: white;
+      border: none;
+      padding: 2px 5px;
+      cursor: pointer;
+    }
+
+    .delete-button:hover {
+      background-color: rgb(84, 7, 7);
     }
   </style>
   <script src="jspro_task_3.js" defer></script>
 </head>
 
 <body>
-  <h1>Добавить отзыв о продукте</h1>
-  <input type="text" id="productName" placeholder="Название продукта" required>
-  <textarea id="reviewText" placeholder="Ваш отзыв" required></textarea>
-  <button id="addReview">Добавить отзыв</button>
+  <h1 class="h1_class">Добавить отзыв о продукте</h1>
+  <div class="box-input">
+    <input type="text" id="productName" placeholder="Название продукта" required>
+    <textarea id="reviewText" placeholder="Ваш отзыв" required></textarea>
+    <button id="addReview">Добавить отзыв</button>
+  </div>
 
-  <h2>Отзывы о продуктах</h2>
+
+  <h2 class="h2_class">Отзывы о продуктах</h2>
   <div id="productList"></div>
 
 

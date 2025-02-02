@@ -53,6 +53,7 @@ function showReviews(productName) {
 
     const deleteButton = document.createElement('button');
     deleteButton.textContent = 'Удалить';
+    deleteButton.classList.add('delete-button');
     deleteButton.onclick = () => deleteReview(productName, index);
 
     reviewDiv.appendChild(deleteButton);
