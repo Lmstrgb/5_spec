@@ -1,0 +1,56 @@
+body {
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f4f4f4;
+}
+
+.slider-container {
+  position: relative;
+  width: 80%;
+  max-width: 600px;
+  text-align: center;
+}
+
+#slider-image {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.buttons {
+  margin-top: 10px;
+}
+
+button {
+  padding: 10px 20px;
+  margin: 5px;
+  border: none;
+  border-radius: 5px;
+  background-color: #007bff;
+  color: white;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+.indicators {
+  margin-top: 10px;
+}
+
+.indicator {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  margin: 0 5px;
+  border-radius: 50%;
+  background-color: #ccc;
+  cursor: pointer;
+}
+
+.indicator.active {
+  background-color: #007bff;
+}
