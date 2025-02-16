@@ -28,13 +28,13 @@ button {
   margin: 5px;
   border: none;
   border-radius: 5px;
-  background-color: #007bff;
+  background-color: #c22beb;
   color: white;
   cursor: pointer;
 }
 
 button:hover {
-  background-color: #0056b3;
+  background-color: #7c0dc0;
 }
 
 .indicators {
@@ -52,5 +52,5 @@ button:hover {
 }
 
 .indicator.active {
-  background-color: #007bff;
+  background-color: #7d0db1;
 }
