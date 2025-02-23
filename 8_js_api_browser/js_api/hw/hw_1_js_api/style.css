@@ -1,0 +1,50 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 20px;
+}
+
+.container {
+  max-width: 400px;
+  margin: 2%;
+}
+
+.activity {
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 15px;
+  margin-bottom: 15px;
+}
+
+.name {
+  font-size: 1.2em;
+  font-weight: bold;
+}
+
+.max-members, .current-members {
+  margin-top: 10px;
+}
+
+button {
+  margin-top: 10px;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.join {
+  background-color: #28a745;
+  color: white;
+}
+
+.cancel {
+  background-color: #dc3545;
+  color: white;
+}
+
+button:disabled {
+  background-color: #ccc;
+}
