@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vue.js 3 HW</title>
+  <script src="https://unpkg.com/vue@3"></script>
+  <style>
+    button {
+      margin: 10px;
+    }
+
+    .list-item {
+      cursor: pointer;
+      margin: 5px 0;
+      padding: 5px;
+      width: 180px;
+      border: 1px solid #ccc;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div id="app">
+    <button @click="reverseText">{{ buttonText }}</button>
+
+    <div>
+      <button @click="addItem">Добавить</button>
+      <ul>
+        <li v-for="(item, index) in items" :key="index" class="list-item" @click="removeItem(index)">
+          {{ item }}
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <script>
+    const { createApp } = Vue;
+
+    createApp({
+      data() {
+        return {
+          buttonText: "Перевернуть",
+          items: [],
+        };
+      },
+      computed: {
+        // reversedButtonText() {
+        //   return this.buttonText.split('').reverse().join('');
+        // },
+      },
+      methods:
+      {
+        reversedButtonText() {
+          return this.buttonText.split('').reverse().join('');
+        },
+        reverseText() {
+          this.buttonText = this.reversedButtonText();
+        },
+        addItem() {
+          this.items.push("Новый элемент списка");
+        },
+        removeItem(index) {
+          this.items.splice(index, 1);
+        },
+      },
+    }).mount('#app');
+  </script>
+
+</body>
+
+</html>
