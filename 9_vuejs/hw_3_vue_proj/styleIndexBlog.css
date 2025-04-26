@@ -4,8 +4,20 @@
   box-sizing: border-box;
 }
 
+.dm-serif-display-regular {
+  font-family: "DM Serif Display", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.dm-serif-display-regular-italic {
+  font-family: "DM Serif Display", sans-serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
 body {
-  font-family: "Jost", "DM Serif Display";
+  font-family: "Jost", "DM Serif Display", sans-serif;
   display: flex;
   flex-direction: column;
   min-height: 100vh;
@@ -74,12 +86,12 @@ a {
 }
 
 .top__content__header {
-  width: 433px;
+  width: 595px;
   color: #292F36;
-  font-family: DM Serif Display;
+  font-family: "DM Serif Display", sans-serif;
   font-size: 65px;
   font-style: normal;
-  font-weight: 400;
+  font-weight: 100;
   line-height: 125%;
   /* 81.25px */
 }
@@ -129,13 +141,14 @@ a {
 .mid__content__description__header {
   color: #292F36;
   text-align: center;
-  font-family: DM Serif Display;
+  font-family: "DM Serif Display", sans-serif;
   font-size: 50px;
   font-style: normal;
   font-weight: 400;
   line-height: 125%;
   /* 62.5px */
-  letter-spacing: 1px;
+  letter-spacing: 2px;
+  width: 788px;
 }
 
 .mid__content__description__text {
@@ -148,6 +161,7 @@ a {
   line-height: 150%;
   /* 33px */
   letter-spacing: 0.22px;
+  width: 510px;
 }
 
 .mid__content {
@@ -168,7 +182,7 @@ a {
 
 .product__card__header {
   color: #292F36;
-  font-family: DM Serif Display;
+  font-family: DM Serif Display, sans-serif;
   font-size: 25px;
   font-style: normal;
   font-weight: 400;
@@ -254,13 +268,14 @@ a {
 .footer__mid__description__header {
   color: #292F36;
   text-align: center;
-  font-family: DM Serif Display;
+  font-family: DM Serif Display, sans-serif;
   font-size: 50px;
   font-style: normal;
-  font-weight: 400;
+  font-weight: 200;
   line-height: 125%;
   /* 62.5px */
   letter-spacing: 1px;
+  width: 362px;
 }
 
 .footer__mid__description__text {
@@ -273,6 +288,7 @@ a {
   line-height: 150%;
   /* 33px */
   letter-spacing: 0.22px;
+  width: 500px;
 }
 
 .footer__mid {
@@ -288,7 +304,7 @@ a {
 .design__card__header {
   width: 270px;
   color: #292F36;
-  font-family: DM Serif Display;
+  /* font-family: DM Serif Display; так как сверху обозначили шрифт с sans-serif */
   font-size: 25px;
   font-style: normal;
   font-weight: 400;
@@ -321,26 +337,22 @@ a {
   align-items: flex-start;
   gap: 210px;
   padding-top: 96px;
-  margin-bottom: 110px;
+  height: 437px;
 }
 
 .footer__bottom__header {
   color: #292F36;
-  font-family: DM Serif Display;
+  font-family: DM Serif Display, sans-serif;
   font-size: 40px;
   font-style: normal;
   font-weight: 400;
   line-height: 125%;
-  min-width: 175px;
-  display: flex;
-  flex-wrap: wrap;
-  gap: 6px;
   /* 50px */
 }
 
 .pages__contacts__header {
   color: #292F36;
-  font-family: DM Serif Display;
+  font-family: DM Serif Display, sans-serif;
   font-size: 25px;
   font-style: normal;
   font-weight: 400;
@@ -392,7 +404,7 @@ a {
 
 .blog__top__content__box__header {
   color: #292F36;
-  font-family: DM Serif Display;
+  font-family: DM Serif Display, sans-serif;
   font-size: 50px;
   font-style: normal;
   font-weight: 400;
@@ -412,7 +424,7 @@ a {
 .blog__mid__content__header {
   margin-bottom: 27px;
   color: #292F36;
-  font-family: DM Serif Display;
+  font-family: DM Serif Display, sans-serif;
   font-size: 50px;
   font-style: normal;
   font-weight: 400;
@@ -471,14 +483,14 @@ a {
   font-weight: 400;
   line-height: 150%;
   letter-spacing: 0.16px;
-  text-transform: capitalize;
+  /*text-transform: capitalize;*/
 }
 
 .blog__bottom__content__header {
   margin-top: 100px;
   margin-bottom: 30px;
   color: #292F36;
-  font-family: DM Serif Display;
+  font-family: DM Serif Display, sans-serif;
   font-size: 50px;
   font-style: normal;
   font-weight: 400;
@@ -539,7 +551,7 @@ a {
 
 .blogDetails__mid__content__right__header {
   color: #292F36;
-  font-family: DM Serif Display, sans-serif;
+  font-family: DM Serif Display;
   font-size: 50px;
   font-style: normal;
   font-weight: 400;
@@ -616,14 +628,12 @@ a {
   line-height: 125%;
   letter-spacing: 4px;
   transform: rotate(180deg);
-  margin-left: 50px;
-  margin-bottom: -35px;
 }
 
 .blogDetails__mid__content__right__quotes__text {
   color: #CDA274;
   text-align: center;
-  font-family: DM Serif Display, sans-serif;
+  font-family: DM Serif Display;
   font-size: 25px;
   font-style: italic;
   font-weight: 400;
@@ -654,7 +664,7 @@ a {
 
 .blogDetails__mid__content__left__header {
   color: #292F36;
-  font-family: DM Serif Display, sans-serif;
+  font-family: DM Serif Display;
   font-size: 25px;
   font-style: normal;
   font-weight: 400;

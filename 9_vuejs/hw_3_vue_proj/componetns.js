@@ -4,18 +4,17 @@ Vue.component('change-Kitchen', {
   
   <div>
  
-<p class="blogDetails__mid__content__right__text">Lorem ipsum dolor sit amet, adipiscing Aliquam eu sem
-  vitae turpmaximus.posuere in.Contrary to popular belief.There are many variations of passages of
-  Lorem Ipsum available, but the majority have suffered alteration in some form, by injecthumour, or
-  randomised words which don't look even slightly believable. Embarrassing hidden in the middle of
-  text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary.
+<p class="blogDetails__mid__content__right__text">Знание о том, как жить дальше, поглощает всю жизненную силу, 
+которая есть у человека.Вопреки распространенному мнению.Существует множество вариантов цитат из
+"Lorem Ipsum", но большинство из них подверглись изменениям в той или иной форме, путем добавления юмора или
+случайных слов, которые выглядят даже немного неправдоподобно. Неловкость, скрытая в середине текста. 
+Все генераторы Lorem Ipsum в Интернете, как правило, повторяют предопределенные фрагменты по мере необходимости.
 </p>
   <div class="blogDetails__mid__content__right__quotes">
   <h1 class="blogDetails__mid__content__right__quotes__header">“</h1>
-  <p class="blogDetails__mid__content__right__quotes__text">The details are not the details. They make
-      the design.</p>
+  <p class="blogDetails__mid__content__right__quotes__text">Какая-то умная и красивая цитата.</p>
 </div>
-  <h1 class="blogDetails__mid__content__right__header">!Kitchen! Design sprints are great</h1>
+  <h1 class="blogDetails__mid__content__right__header">!Кухня! Дизайнерские спринты - это здорово</h1>
   <p class="blogDetails__mid__content__right__text">Lorem ipsum dolor sit amet, adipiscing Aliquam eu sem
       vitae turpmaximus.posuere in.Contrary to popular belief.There are many variations of passages of
       Lorem Ipsum available, but the majority have suffered.</p>
@@ -47,21 +46,15 @@ Vue.component('change-Kitchen', {
 })
 Vue.component('change-Bedroom', {
 
-  data() {
-    return {
-      counter: 0
-    }
-  },
   template: `
   <div>
-  <h1 class="blogDetails__mid__content__right__header">!Bedroom! Design sprints are great</h1>
+  <h1 class="blogDetails__mid__content__right__header">!Спальня! Дизайнерские спринты - это здорово</h1>
   <p class="blogDetails__mid__content__right__text">Dolor sit amet, adipiscing Aliquam eu sem
       vitae turpmaximus.posuere in.Contrary to popular belief.There are many variations of passages of
       Lorem Ipsum available, but the majority have suffered.</p>
       <div class="blogDetails__mid__content__right__quotes">
       <h1 class="blogDetails__mid__content__right__quotes__header">“</h1>
-      <p class="blogDetails__mid__content__right__quotes__text">The details are not the details. They make
-          the design.</p>
+      <p class="blogDetails__mid__content__right__quotes__text">Какая-то умная и красивая цитата.</p>
   </div>
   </div>
   `
@@ -70,7 +63,7 @@ Vue.component('change-Building', {
 
   template: `
   <div>
-  <h1 class="blogDetails__mid__content__right__header">!Building! Design sprints are great</h1>
+  <h1 class="blogDetails__mid__content__right__header">!Здания! Дизайнерские спринты - это здорово</h1>
   <p class="blogDetails__mid__content__right__text">Popular belief.There are many variations of passages of
   Lorem Ipsum available, but the majority have suffered.Lorem ipsum dolor sit amet, adipiscing Aliquam eu sem
       vitae turpmaximus.posuere in.Contrary to popular belief.There are many variations of passages of
@@ -96,7 +89,7 @@ Vue.component('change-Architecture', {
 
   template: `
   <div>
-  <h1 class="blogDetails__mid__content__right__header">!Architecture! Design sprints are great</h1>
+  <h1 class="blogDetails__mid__content__right__header">!Архитектура! Дизайнерские спринты - это здорово</h1>
   <p class="blogDetails__mid__content__right__text">Contrary to popular belief.There are many variations of passages of
   Lorem Ipsum available, but the majority have suffered.Lorem ipsum dolor sit amet, adipiscing Aliquam eu sem
       vitae turpmaximus.posuere in.Contrary to popular belief.There are many variations of passages of
@@ -104,11 +97,11 @@ Vue.component('change-Architecture', {
   </div>
   `
 })
-Vue.component('change-Kitchen-Planning', {
+Vue.component('change-Planning', {
 
   template: `
   <div>
-  <h1 class="blogDetails__mid__content__right__header">!Kitchen Planning! Design sprints are great</h1>
+  <h1 class="blogDetails__mid__content__right__header">!Планирование! Дизайнерские спринты - это здорово</h1>
   <p class="blogDetails__mid__content__right__text">There are many variations of passages of
   Lorem Ipsum available, but the majority have suffered.Lorem ipsum dolor sit amet, adipiscing Aliquam eu sem
       vitae turpmaximus.posuere in.Contrary to popular belief.There are many variations of passages of
@@ -135,8 +128,8 @@ Vue.component('change-none', {
   </change-Building>
   <change-Architecture>  
   </change-Architecture>
-  <change-Kitchen-Planning>  
-  </change-Kitchen-Planning>
+  <change-Planning>  
+  </change-Planning>
   </div>
   `
 })
