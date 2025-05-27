@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HW_2_vue3.js</title>
+
+  <script src="https://unpkg.com/vue@3"></script>
+  <style>
+    #app {
+      font-family: Avenir, Helvetica, Arial, sans-serif;
+      max-width: 400px;
+      margin: 20px auto;
+      padding: 20px;
+      border: 1px solid #eee;
+      border-radius: 5px;
+    }
+
+    .controls {
+      margin-bottom: 20px;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    .controls button {
+      padding: 8px 12px;
+      cursor: pointer;
+      text-align: left;
+      width: 260px;
+      background: #f0f0f0;
+      border: 1px solid #ddd;
+      border-radius: 4px;
+      transition: background 0.2s;
+    }
+
+    .controls button:hover {
+      background: #e0e0e0;
+    }
+
+    .product-list {
+      list-style: none;
+      padding: 0;
+    }
+
+    .product-item {
+      display: flex;
+      justify-content: space-between;
+      padding: 10px;
+      border-bottom: 1px solid #eee;
+    }
+
+    .product-name {
+      font-weight: bold;
+    }
+
+    .product-price {
+      color: #2c3e50;
+    }
+
+    .sort-indicator {
+      margin-left: 10px;
+      font-size: 0.8em;
+      color: #577;
+    }
+  </style>
+</head>
+
+<body>
+  <div id="app">
+    <h1>Список товаров</h1>
+
+    <div class="controls">
+      <button @click="sortProducts('asc')">
+        По возрастанию цены
+        <span v-if="sortDirection === 'asc'" class="sort-indicator">✓</span>
+      </button>
+      <button @click="sortProducts('desc')">
+        По убыванию цены
+        <span v-if="sortDirection === 'desc'" class="sort-indicator">✓</span>
+      </button>
+      <button @click="resetSort">
+        Сбросить сортировку
+        <span v-if="!sortDirection" class="sort-indicator">✓</span>
+      </button>
+    </div>
+
+    <ul class="product-list">
+      <li v-for="product in sortedProducts" :key="product.id" class="product-item">
+        <span class="product-name">{{ product.name }}</span>
+        <span class="product-price">{{ product.price }} ₽</span>
+      </li>
+    </ul>
+  </div>
+
+  <script>
+    const { createApp, ref, computed } = Vue;
+
+    createApp({
+      setup() {
+        const products = ref([
+          { id: 1, name: 'Ноутбук', price: 45000 },
+          { id: 2, name: 'Смартфон', price: 25000 },
+          { id: 3, name: 'Наушники', price: 5000 },
+          { id: 4, name: 'Планшет', price: 30000 },
+          { id: 5, name: 'Монитор', price: 15000 }
+        ]);
+
+        const sortDirection = ref(null);
+
+        const sortedProducts = computed(() => {
+          const sorted = [...products.value];
+          if (sortDirection.value === 'asc') {
+            return sorted.sort((a, b) => a.price - b.price);
+          } else if (sortDirection.value === 'desc') {
+            return sorted.sort((a, b) => b.price - a.price);
+          }
+          return sorted;
+        });
+
+        function sortProducts(direction) {
+          sortDirection.value = direction;
+        }
+
+        function resetSort() {
+          sortDirection.value = null;
+        }
+
+        return {
+          products,
+          sortDirection,
+          sortedProducts,
+          sortProducts,
+          resetSort
+        };
+      }
+    }).mount('#app');
+  </script>
+</body>
+
+</html>
