@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vue.js 2 HW</title>
+  <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+  <style>
+    button {
+      margin: 10px;
+    }
+
+    .list-item {
+      cursor: pointer;
+      margin: 5px 0;
+      padding: 5px;
+      width: 180px;
+      border: 1px solid #ccc;
+    }
+  </style>
+</head>
+
+<body>
+  <div id="app">
+    <div>
+      <button @click="reverseText">{{ buttonText }}</button>
+    </div>
+    <div>
+      <button @click="addItem">Добавить</button>
+    </div>
+    <ul>
+      <li v-for="(item, index) in items" :key="index" class="list-item" @click="removeItem(index)">
+        {{ item }}
+      </li>
+    </ul>
+  </div>
+
+  <script>
+    new Vue({
+      el: '#app',
+      data: {
+        buttonText: 'Перевернуть',
+        items: []
+      },
+      methods: {
+        reverseText() {
+          this.buttonText = this.buttonText.split('').reverse().join('');
+        },
+        addItem() {
+          this.items.push('Новый элемент списка');
+        },
+        removeItem(index) {
+          this.items.splice(index, 1);
+        }
+      }
+    });
+  </script>
+</body>
+
+</html>
