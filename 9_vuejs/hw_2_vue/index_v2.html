@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HW_2_vue2.js</title>
+  <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+</head>
+
+<body>
+  <style>
+    #app {
+      font-family: Avenir, Helvetica, Arial, sans-serif;
+      max-width: 400px;
+      margin: 20px auto;
+      padding: 20px;
+      border: 1px solid #eee;
+      border-radius: 5px;
+    }
+
+    .controls {
+      margin-bottom: 20px;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 5px;
+    }
+
+    .controls button {
+      padding: 8px 12px;
+      cursor: pointer;
+      text-align: left;
+      width: 260px;
+      /* Фиксированная ширина для всех кнопок */
+      box-sizing: border-box;
+      /* Чтобы padding не влиял на ширину */
+    }
+
+    .product-list {
+      list-style: none;
+      padding: 0;
+    }
+
+    .product-item {
+      display: flex;
+      justify-content: space-between;
+      padding: 10px;
+      border-bottom: 1px solid #eee;
+    }
+
+    .product-name {
+      font-weight: bold;
+    }
+
+    .product-price {
+      color: #2c3e50;
+    }
+  </style>
+  <div id="app">
+    <h1>Список товаров</h1>
+
+    <div class="controls">
+      <button @click="sortProducts('asc')">Сортировать по возрастанию цены</button>
+      <button @click="sortProducts('desc')">Сортировать по убыванию цены</button>
+      <button @click="resetSort">Сбросить сортировку</button>
+    </div>
+
+    <ul class="product-list">
+      <li v-for="(product, index) in sortedProducts" :key="index" class="product-item">
+        <span class="product-name">{{ product.name }}</span>
+        <span class="product-price">{{ product.price }} ₽</span>
+      </li>
+    </ul>
+  </div>
+
+  <script>
+    new Vue({
+      el: '#app',
+      data: {
+        products: [
+          { name: 'Ноутбук', price: 45000 },
+          { name: 'Смартфон', price: 25000 },
+          { name: 'Наушники', price: 5000 },
+          { name: 'Планшет', price: 30000 },
+          { name: 'Монитор', price: 15000 }
+        ],
+        sortDirection: null
+      },
+      computed: {
+        sortedProducts() {
+          // Создаем копию массива для сортировки
+          const products = [...this.products];
+
+          if (this.sortDirection === 'asc') {
+            return products.sort((a, b) => a.price - b.price);
+          } else if (this.sortDirection === 'desc') {
+            return products.sort((a, b) => b.price - a.price);
+          }
+
+          return products;
+        }
+      },
+      methods: {
+        sortProducts(direction) {
+          this.sortDirection = direction;
+        },
+        resetSort() {
+          this.sortDirection = null;
+        }
+      }
+    });
+  </script>
+
+</body>
+
+</html>
